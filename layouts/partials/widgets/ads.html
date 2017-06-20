@@ -1,0 +1,14 @@
+
+{{- if .Site.Params.widgets.ads }}
+<div class="widget-recent widget">
+	<h4 class="widget__title">ADS</h4>
+	<div class="widget__content ads">
+		<amp-img 
+        src="/img/ads.jpg" 
+        alt="{{ .Title }}" 
+		width="300"
+        height="250">
+		</amp-img>
+	</div>
+</div>
+{{- end }}

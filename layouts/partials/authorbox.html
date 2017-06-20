@@ -1,0 +1,20 @@
+{{- if .Site.Params.authorbox }}
+<div class="authorbox clearfix">
+	
+	<div class="authorbox__avatar">
+    <amp-img 
+    src="{{ .Site.Author.avatar | absURL }}" 
+    alt="{{ .Site.Author.name }} avatar"
+    width="90" 
+    height="90"></amp-img>
+    </div>
+	
+	<div class="authorbox__header">
+		<span class="authorbox__name">About {{ .Site.Author.name }}</span>
+	</div>
+	<div class="authorbox__description">
+		<p>{{ .Site.Author.bio }}</p>
+		<p>ID : {{ .FuzzyWordCount }}</p>
+	</div>
+</div>
+{{- end }}
